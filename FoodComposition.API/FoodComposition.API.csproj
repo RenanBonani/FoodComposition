@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AngleSharp" Version="1.1.2" />
+    <PackageReference Include="AngleSharp.XPath" Version="2.0.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FoodComposition.Application\FoodComposition.Application.csproj" />
+    <ProjectReference Include="..\FoodComposition.Communication\FoodComposition.Communication.csproj" />
+    <ProjectReference Include="..\FoodComposition.Exception\FoodComposition.Exception.csproj" />
+    <ProjectReference Include="..\FoodComposition.Infrastructure\FoodComposition.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

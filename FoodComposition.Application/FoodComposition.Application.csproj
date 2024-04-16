@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FoodComposition.Communication\FoodComposition.Communication.csproj" />
+    <ProjectReference Include="..\FoodComposition.Domain\FoodComposition.Domain.csproj" />
+    <ProjectReference Include="..\FoodComposition.Exception\FoodComposition.Exception.csproj" />
+    <ProjectReference Include="..\FoodComposition.Infrastructure\FoodComposition.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UseCases\WebScrapping\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AngleSharp" Version="1.1.2" />
+  </ItemGroup>
+
+</Project>
