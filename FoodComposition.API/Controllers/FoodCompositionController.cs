@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FoodComposition.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/foodcomposition")]
     [ApiController]
     public class FoodCompositionController : ControllerBase
     {
@@ -22,18 +22,13 @@ namespace FoodComposition.API.Controllers
             var data = await _dbContext.FoodCompositions.ToListAsync();
             return Ok(data);
         }
-
-        [HttpGet("{name}")]
+        
+        [HttpGet("{name}")]        
         public async Task<IActionResult> GetDataByName(string name)
         {
             var data = await _dbContext.FoodCompositions
                 .Where(item => item.NameFood.ToLower().Contains(name.ToLower()))
                 .ToListAsync();
-
-            if (data == null || !data.Any())
-            {
-                return NotFound();
-            }
 
             return Ok(data);
         }

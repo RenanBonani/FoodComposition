@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FoodComposition.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/webScrapping")]
     [ApiController]
     public class WebScrappingFoodCompositionController : ControllerBase
     {

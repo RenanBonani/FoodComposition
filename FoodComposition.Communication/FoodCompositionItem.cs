@@ -8,10 +8,10 @@
 
         public string NameFood { get; set; }
 
-        public string? ScientificName { get; set; }
+        public string ScientificName { get; set; }
 
         public string GroupFood { get; set; }
 
-        public List<string>? Componentes { get; set; }
+        public List<string> Componentes { get; set; }
     }
 }
