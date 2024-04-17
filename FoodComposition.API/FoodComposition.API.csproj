@@ -15,7 +15,6 @@
   <ItemGroup>
     <ProjectReference Include="..\FoodComposition.Application\FoodComposition.Application.csproj" />
     <ProjectReference Include="..\FoodComposition.Communication\FoodComposition.Communication.csproj" />
-    <ProjectReference Include="..\FoodComposition.Exception\FoodComposition.Exception.csproj" />
     <ProjectReference Include="..\FoodComposition.Infrastructure\FoodComposition.Infrastructure.csproj" />
   </ItemGroup>
 
